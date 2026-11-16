@@ -1,0 +1,184 @@
+.box2{
+    display: flex;
+    justify-content: center;
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    border: 1px solid black;
+}
+
+/*hero home*/
+.view_all{
+    background-color:transparent;
+    border:none;
+}
+.hero_home{
+    position: relative;
+    top:100px;
+    width:100%;
+    height: 700px;
+
+    display:flex;
+}
+/*menu informasi*/
+.menu_dan_informasi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    z-index: 20;
+}
+/* menu list */
+.menu_list{
+    right: 0;
+}
+.menuvl{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+.card{
+    border-radius: 10px;
+    position:relative;
+    width: 200px;
+    height: 200px;
+    overflow:hidden;
+}
+.card img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    z-index: 10;
+}
+.card h3{
+    position: absolute;
+    bottom: 20px;
+    left:10px;
+    color:rgb(255, 255, 255);
+    opacity: 0;
+    transition: opactity 0.3s ease-in-out;
+    z-index: 11;
+}
+.card:hover h3{
+    opacity: 1;
+}
+.card p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color:rgb(255, 255, 255);
+    z-index: 11;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover p{
+    opacity: 1;
+}
+.card::after{
+    content:"";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background:rgba(0,0,0, 0.5);
+    opacity:0;
+    z-index: 10;
+}
+
+.card:hover:after{
+    opacity:1;
+}
+
+.card:hover {
+    width:220px;
+    height:220px;
+    transition: 0.3s ease-in-out;
+}
+.card:hover img {
+    width:220px;
+    height:220px;
+    transition: 0.3s ease-in-out;
+}
+.list_food{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:16px;
+}
+.list_drink{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:16px;
+}.blank{
+    height: 16px;
+}
+.informasi{
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    height: 320px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+}
+.info{
+    height: 320px;
+    width:75%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.info img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+
+.lokasi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+#map{
+    border-radius:16px;
+    margin:24px;
+    width: 500px;
+    height: 450px;
+    overflow:hidden;
+}
+.boxsementara{
+    display: flex;
+    justify-content: center;
+    gap:16px;
+    flex-direction: column;
+    
+}
+
+.box1 iframe{
+    border-radius:16px;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.l{
+    display: flex;
+    justify-content: center;
+}
+.box1{
+    margin:24px;
+    padding:24px;
+    background-color:#392d2b;
+    color: white;
+    border-radius:16px;
+}
