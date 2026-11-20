@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | Jejak Rasa Nusantara</title>
+
+  <!-- style.css = warna & header/nav yang dipakai semua halaman -->
+  <link rel="stylesheet" href="style.css">
+  <!-- feedback.css = khusus halaman ini -->
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER & NAVIGASI ===================== -->
+ <nav>
+    <div class="bg_nav">
+        <div class="navigation_1">
+            <div class="store">
+                <div class="store_logo">
+                    <img src="Minimal Brown Chef Emblem.png" alt="logo">
+                </div>
+                    <h1>Jejak Rasa Nusantara</h1>
+            </div>
+        <div class="container">
+            <div class="search">
+                <input type="text" placeholder="search">
+                <button>
+                    <img src="search.svg" alt="">
+                </button>
+            </div>
+                <div class="feedback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#ffffff"><path d="M12,15q0.43,0 0.71-0.29T13,14t-0.29-0.71T12,13t-0.71,0.29T11,14t0.29,0.71T12,15Zm-1-4h2V5H11v6ZM2,22V4Q2,3.17 2.59,2.59T4,2H20q0.83,0 1.41,0.59T22,4V16q0,0.82-0.59,1.41T20,18H6L2,22Zm3.15-6H20V4H4V17.13L5.15,16ZM4,16V4V16Z"/></svg>
+                    <a style="color: white;" href="feedback.html">Feedback</a>
+                </div>
+            </div>
+            </div>
+           <div class="navigation_2">
+  <div id="home" class="n active"><a href="index.html"><h4>Home</h4></a></div>
+  <div id="menu" class="n"><a href="menu.html"><h4>Menu</h4></a></div>
+  <div id="news" class="n"><a href="berita.html"><h4>Berita</h4></a></div>
+  <div id="about" class="n"><a href="tentang.html"><h4>Tentang</h4></a></div>
+  <div id="fasilitas" class="n"><a href="fasilitas.html"><h4>Fasilitas</h4></a></div>
+</div>
+
+    </div>
+
+    </nav>
+
+  <main class="feedback_page">
+
+    <!-- ===================== JUDUL HALAMAN ===================== -->
+    <section class="feedback_hero">
+      <p class="feedback_label">Suara Anda Penting</p>
+      <h2 class="feedback_title">Beri Kami Masukan</h2>
+      <p class="feedback_intro">
+        Ceritakan pengalamanmu di Jejak Rasa Nusantara. Kritik dan saran
+        dari kamu membantu kami menyajikan rasa yang lebih baik.
+      </p>
+    </section>
+
+
+    <!-- ===================== FORM FEEDBACK ===================== -->
+    <section class="feedback_section">
+
+      <form class="feedback_form" id="feedbackForm" action="#" method="post">
+
+        <!-- Nama -->
+        <div class="form_group">
+          <label class="form_label" for="inputName">Nama</label>
+          <input class="form_input" type="text" id="inputName" name="nama"
+                 placeholder="Nama lengkap kamu" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form_group">
+          <label class="form_label" for="inputEmail">Email</label>
+          <input class="form_input" type="email" id="inputEmail" name="email"
+                 placeholder="nama@email.com" required>
+        </div>
+
+        <!-- Kategori -->
+        <div class="form_group">
+          <label class="form_label" for="inputCategory">Kategori</label>
+          <select class="form_input" id="inputCategory" name="kategori" required>
+            <option value="" disabled selected>Pilih kategori</option>
+            <option value="makanan">Makanan &amp; Minuman</option>
+            <option value="pelayanan">Pelayanan</option>
+            <option value="fasilitas">Fasilitas</option>
+            <option value="website">Website</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </div>
+
+        <!-- Penilaian 1-5 -->
+        <div class="form_group">
+          <span class="form_label">Penilaian</span>
+          <div class="rating_group">
+
+            <input class="rating_radio" type="radio" id="rating1" name="penilaian" value="1" required>
+            <label class="rating_option" for="rating1">1</label>
+
+            <input class="rating_radio" type="radio" id="rating2" name="penilaian" value="2">
+            <label class="rating_option" for="rating2">2</label>
+
+            <input class="rating_radio" type="radio" id="rating3" name="penilaian" value="3">
+            <label class="rating_option" for="rating3">3</label>
+
+            <input class="rating_radio" type="radio" id="rating4" name="penilaian" value="4">
+            <label class="rating_option" for="rating4">4</label>
+
+            <input class="rating_radio" type="radio" id="rating5" name="penilaian" value="5">
+            <label class="rating_option" for="rating5">5</label>
+
+          </div>
+          <p class="form_hint">1 = kurang puas, 5 = sangat puas</p>
+        </div>
+
+        <!-- Pesan -->
+        <div class="form_group">
+          <label class="form_label" for="inputMessage">Pesan</label>
+          <textarea class="form_input form_textarea" id="inputMessage" name="pesan"
+                    rows="6" placeholder="Tulis masukan kamu di sini..." required></textarea>
+        </div>
+
+        <button class="submit_button" type="submit">Kirim Feedback &rarr;</button>
+      </form>
+
+
+      <!-- Pesan terima kasih (muncul setelah form dikirim) -->
+      <div class="thank_you_box" id="thankYouBox" hidden>
+        <h3 class="thank_you_title">Terima kasih!</h3>
+        <p class="thank_you_text">
+          Masukan kamu sudah kami terima. Kami akan membacanya dengan seksama.
+        </p>
+        <a class="submit_button" href="index.html">Kembali ke Home</a>
+      </div>
+
+    </section>
+  </main>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="feedback_footer">
+    <p>&copy; 2026 Jejak Rasa Nusantara. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="feedback.js"></script>
+</body>
+</html>

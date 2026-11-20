@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fasilitas | Jejak Rasa Nusantara</title>
+  <link rel="stylesheet" href="fasilitas.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <nav>
+    <div class="bg_nav">
+        <div class="navigation_1">
+            <div class="store">
+                <div class="store_logo">
+                    <img src="Minimal Brown Chef Emblem.png" alt="logo">
+                </div>
+                    <h1>Jejak Rasa Nusantara</h1>
+            </div>
+        <div class="container">
+            <div class="search">
+                <input type="text" placeholder="search">
+                <button>
+                    <img src="search.svg" alt="">
+                </button>
+            </div>
+                <div class="feedback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#ffffff"><path d="M12,15q0.43,0 0.71-0.29T13,14t-0.29-0.71T12,13t-0.71,0.29T11,14t0.29,0.71T12,15Zm-1-4h2V5H11v6ZM2,22V4Q2,3.17 2.59,2.59T4,2H20q0.83,0 1.41,0.59T22,4V16q0,0.82-0.59,1.41T20,18H6L2,22Zm3.15-6H20V4H4V17.13L5.15,16ZM4,16V4V16Z"/></svg>
+                    <a style="color: white;" href="feedback.html">Feedback</a>
+                 </div>
+            </div>
+            </div>
+           <div class="navigation_2">
+  <div id="home" class="n active"><a href="index.html"><h4>Home</h4></a></div>
+  <div id="menu" class="n"><a href="menu.html"><h4>Menu</h4></a></div>
+  <div id="news" class="n"><a href="berita.html"><h4>Berita</h4></a></div>
+  <div id="about" class="n"><a href="tentang.html"><h4>Tentang</h4></a></div>
+  <div id="fasilitas" class="n"><a href="fasilitas.html"><h4>Fasilitas</h4></a></div>
+</div>
+
+    </div>
+
+    </nav>
+   <div class="block"></div>
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <!-- Ganti foto latar di fasilitas.css (cari: .facility-hero) -->
+    <section class="facility-hero">
+      <div class="facility-hero__content">
+        <p class="facility-hero__label">Nyaman Untuk Semua</p>
+        <h2 class="facility-hero__title">Fasilitas Kami</h2>
+        <p class="facility-hero__text">
+          Kami menyiapkan berbagai fasilitas agar setiap kunjungan terasa
+          nyaman, mulai dari ruang makan yang hangat sampai area khusus
+          untuk keluarga dan rombongan.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== DAFTAR FASILITAS ===================== -->
+    <section class="facility-section" id="daftar-fasilitas">
+      <h2 class="section-title">Apa Saja yang Tersedia?</h2>
+      <p class="section-subtitle">Semua fasilitas dapat digunakan pengunjung tanpa biaya tambahan.</p>
+
+      <div class="facility-grid">
+
+        <!--
+          CARA MENAMBAH FOTO:
+          1. Simpan foto di folder  images/fasilitas/
+          2. Ubah nilai src="..." pada gambar di bawah dengan nama file fotomu
+          3. Ubah alt="..." dengan deskripsi singkat foto
+
+          CARA MENAMBAH KARTU BARU:
+          Salin satu blok <article class="facility-card"> ... </article>
+          lalu tempel di bawahnya.
+        -->
+
+        <article class="facility-card">
+          <div class="facility-card__photo">
+            <img src="images/fasilitas/ruang-makan.jpg" alt="Ruang makan dalam ruangan">
+          </div>
+          <div class="facility-card__body">
+            <h3 class="facility-card__title">Ruang Makan Indoor</h3>
+            <p class="facility-card__description">
+              Ruangan ber-AC dengan suasana hangat dan tempat duduk yang luas.
+            </p>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-card__photo">
+            <img src="images/fasilitas/area-outdoor.jpg" alt="Area makan outdoor">
+          </div>
+          <div class="facility-card__body">
+            <h3 class="facility-card__title">Area Outdoor</h3>
+            <p class="facility-card__description">
+              Makan di udara terbuka dengan angin sepoi-sepoi, cocok untuk sore hari.
+            </p>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-card__photo">
+            <img src="images/fasilitas/ruang-keluarga.jpg" alt="Ruang keluarga">
+          </div>
+          <div class="facility-card__body">
+            <h3 class="facility-card__title">Ruang Keluarga &amp; Rombongan</h3>
+            <p class="facility-card__description">
+              Ruang khusus untuk acara keluarga, arisan, atau pertemuan kecil.
+            </p>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-card__photo">
+            <img src="images/fasilitas/wifi.jpg" alt="Area WiFi gratis">
+          </div>
+          <div class="facility-card__body">
+            <h3 class="facility-card__title">WiFi Gratis</h3>
+            <p class="facility-card__description">
+              Koneksi internet cepat untuk bekerja, belajar, atau sekadar bersantai.
+            </p>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-card__photo">
+            <img src="images/fasilitas/parkir.jpg" alt="Area parkir">
+          </div>
+          <div class="facility-card__body">
+            <h3 class="facility-card__title">Area Parkir Luas</h3>
+            <p class="facility-card__description">
+              Tersedia parkir motor dan mobil yang aman dan mudah dijangkau.
+            </p>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-card__photo">
+            <img src="images/fasilitas/mushola.jpg" alt="Mushola">
+          </div>
+          <div class="facility-card__body">
+            <h3 class="facility-card__title">Mushola</h3>
+            <p class="facility-card__description">
+              Tempat ibadah yang bersih dengan perlengkapan sholat tersedia.
+            </p>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-card__photo">
+            <img src="images/fasilitas/toilet.jpg" alt="Toilet bersih">
+          </div>
+          <div class="facility-card__body">
+            <h3 class="facility-card__title">Toilet Bersih</h3>
+            <p class="facility-card__description">
+              Dibersihkan secara rutin demi kenyamanan semua pengunjung.
+            </p>
+          </div>
+        </article>
+
+        <article class="facility-card">
+          <div class="facility-card__photo">
+            <img src="images/fasilitas/area-anak.jpg" alt="Area bermain anak">
+          </div>
+          <div class="facility-card__body">
+            <h3 class="facility-card__title">Area Bermain Anak</h3>
+            <p class="facility-card__description">
+              Sudut bermain agar si kecil senang sementara orang tua menikmati hidangan.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== AJAKAN (CALL TO ACTION) ===================== -->
+    <section class="cta-section">
+      <h2 class="cta-section__title">Siap Mencicipi Rasa Nusantara?</h2>
+      <p class="cta-section__text">Lihat daftar menu kami dan temukan hidangan favoritmu.</p>
+      <a class="button" href="menu.html">Jelajahi Menu &rarr;</a>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Jejak Rasa Nusantara. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>

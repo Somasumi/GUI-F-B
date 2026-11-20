@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita - Jejak Rasa Nusantara</title>
+    <link rel="stylesheet" href="berita.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <nav>
+    <div class="bg_nav">
+        <div class="navigation_1">
+            <div class="store">
+                <div class="store_logo">
+                    <img src="Minimal Brown Chef Emblem.png" alt="logo">
+                </div>
+                    <h1>Jejak Rasa Nusantara</h1>
+            </div>
+        <div class="container">
+            <div class="search">
+                <input type="text" placeholder="search">
+                <button>
+                    <img src="search.svg" alt="">
+                </button>
+            </div>
+                <div class="feedback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#ffffff"><path d="M12,15q0.43,0 0.71-0.29T13,14t-0.29-0.71T12,13t-0.71,0.29T11,14t0.29,0.71T12,15Zm-1-4h2V5H11v6ZM2,22V4Q2,3.17 2.59,2.59T4,2H20q0.83,0 1.41,0.59T22,4V16q0,0.82-0.59,1.41T20,18H6L2,22Zm3.15-6H20V4H4V17.13L5.15,16ZM4,16V4V16Z"/></svg>
+                   <a style="color: white;" href="feedback.html">Feedback</a>
+                 </div>
+            </div>
+            </div>
+           <div class="navigation_2">
+  <div id="home" class="n active"><a href="index.html"><h4>Home</h4></a></div>
+  <div id="menu" class="n"><a href="menu.html"><h4>Menu</h4></a></div>
+  <div id="news" class="n"><a href="berita.html"><h4>Berita</h4></a></div>
+  <div id="about" class="n"><a href="tentang.html"><h4>Tentang</h4></a></div>
+  <div id="fasilitas" class="n"><a href="fasilitas.html"><h4>Fasilitas</h4></a></div>
+</div>
+
+    </div>
+
+    </nav>
+<div class="block"></div>
+    <main class="news-page">
+        <section class="news-heading">
+            <span class="eyebrow">KABAR DARI KAMI</span>
+            <h1>Berita & Informasi</h1>
+            <p>Ikuti cerita, pencapaian, dan informasi terbaru dari Jejak Rasa Nusantara.</p>
+        </section>
+
+        <section class="featured-news" aria-label="Berita utama">
+            <div class="featured-image">
+                <img src="photo/berita-buka-puasa.jpg" alt="Suasana acara buka puasa bersama">
+                <span class="news-type">Pencapaian</span>
+            </div>
+            <div class="featured-content">
+                <p class="news-date">Contoh berita · 20 Maret 2026</p>
+                <h2>Merayakan Kebersamaan dalam Buka Puasa Bersama</h2>
+                <p>
+                    Jejak Rasa Nusantara mengadakan acara buka puasa bersama sebagai bentuk
+                    apresiasi kepada pelanggan dan komunitas. Momen ini menjadi kesempatan
+                    untuk berbagi hidangan, cerita, dan kebersamaan.
+                </p>
+                <a class="read-more" href="#berita-buka-puasa">Baca selengkapnya <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="news-section" id="semua-berita">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">UPDATE TERBARU</span>
+                    <h2>Informasi Toko</h2>
+                </div>
+                <div class="news-filters" aria-label="Filter berita">
+                    <button class="filter-btn active" type="button" data-filter="semua">Semua</button>
+                    <button class="filter-btn" type="button" data-filter="kegiatan">Kegiatan</button>
+                    <button class="filter-btn" type="button" data-filter="pengumuman">Pengumuman</button>
+                    <button class="filter-btn" type="button" data-filter="pencapaian">Pencapaian</button>
+                </div>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card" data-category="pencapaian" id="berita-buka-puasa">
+                    <a class="news-image" href="#berita-buka-puasa">
+                        <img src="photo/berita-buka-puasa.jpg" alt="Acara buka puasa bersama">
+                        <span class="news-type">Pencapaian</span>
+                    </a>
+                    <div class="news-card-content">
+                        <p class="news-date">Contoh berita · 20 Maret 2026</p>
+                        <h3>Acara Buka Puasa Bersama Pelanggan</h3>
+                        <p>Merayakan kebersamaan melalui acara buka puasa yang hangat bersama pelanggan dan warga sekitar.</p>
+                        <a class="text-link" href="#berita-buka-puasa">Baca berita <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="pengumuman">
+                    <a class="news-image" href="#pengumuman-libur">
+                        <img src="photo/berita-tutup-toko.jpg" alt="Tampak depan toko">
+                        <span class="news-type announcement">Pengumuman</span>
+                    </a>
+                    <div class="news-card-content">
+                        <p class="news-date">Contoh pengumuman · 10 April 2026</p>
+                        <h3>Informasi Penutupan Toko Sementara</h3>
+                        <p>Toko akan tutup sementara pada tanggal yang telah ditentukan. Kami akan kembali melayani pelanggan setelah itu.</p>
+                        <a class="text-link" href="#pengumuman-libur">Baca pengumuman <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="kegiatan">
+                    <a class="news-image" href="#berita-renovasi">
+                        <img src="photo/berita-renovasi.jpg" alt="Proses renovasi area toko">
+                        <span class="news-type activity">Kegiatan</span>
+                    </a>
+                    <div class="news-card-content">
+                        <p class="news-date">Contoh berita · 5 Mei 2026</p>
+                        <h3>Pembaruan Ruang untuk Kenyamanan Pelanggan</h3>
+                        <p>Kami melakukan renovasi dan penataan ulang area toko agar suasana bersantap menjadi lebih nyaman.</p>
+                        <a class="text-link" href="#berita-renovasi">Baca berita <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sample article detail sections. Replace the sample dates and stories with real store information. -->
+        <section class="article-details" aria-label="Contoh isi berita">
+            <article class="article-detail" id="pengumuman-libur">
+                <span class="eyebrow">PENGUMUMAN TOKO</span>
+                <h2>Informasi Penutupan Toko Sementara</h2>
+                <p>
+                    Kepada pelanggan Jejak Rasa Nusantara, kami informasikan bahwa toko akan
+                    tutup sementara pada [tanggal penutupan] karena [alasan penutupan].
+                    Kami berencana kembali beroperasi pada [tanggal buka kembali].
+                    Terima kasih atas pengertian Anda.
+                </p>
+            </article>
+            <article class="article-detail" id="berita-renovasi">
+                <span class="eyebrow">KEGIATAN TOKO</span>
+                <h2>Pembaruan Ruang untuk Kenyamanan Pelanggan</h2>
+                <p>
+                    Jejak Rasa Nusantara sedang melakukan renovasi pada [bagian toko] mulai
+                    [tanggal]. Pembaruan ini dilakukan agar pelanggan dapat menikmati hidangan
+                    dengan suasana yang lebih nyaman. Informasi operasional selama renovasi:
+                    [jam operasional atau keterangan layanan].
+                </p>
+            </article>
+        </section>
+    </main>
+
+<footer>
+     <div class="store_footer">
+            <div class="store_logo">
+                <img src="Minimal Brown Chef Emblem.png" alt="logo">
+            </div>
+            <h1>Jejak Rasa Nusantara</h1>
+            </div>
+        <div class="footer">
+            <div class="tentang">
+                <p>
+                    tentang restoranm
+                </p>
+                <P>
+                    restoran ini adalah restoran yang menyediakan berbagai macam makanan dan minuman dengan kualitas terbaik. Kami berkomitmen untuk memberikan pengalaman kuliner yang tak terlupakan bagi setiap pelanggan kami.
+                </P>
+        </div>
+        <div class="social_media">
+            <div class="app">
+                <img src="logo svg/instagram-svgrepo-com.svg" alt="logo_instagram">
+                <p>
+                    instagram
+                </p>
+            </div>
+            <div class="app">
+                <img src="logo svg/facebook-svgrepo-com.svg" alt="logo_facebook">
+                <p>
+                    facebook
+                </p>
+            </div>
+            <div class="app">
+                <img src="logo svg/icons8-x.svg" alt="logo_X">
+                <p>
+                    X
+                </p>
+            </div>
+            </div>    
+        </div>
+        <div class="copyright">
+            <div class="a" id="footer_links">
+                <a href="" class="a1">kebijakan privasi</a>
+                <a href="" class="a2">peta situs</a>
+            </div>
+            <p class="a" id="footer_copyright">
+            ©2026 Group 6. Semua Hak Dilindungi Undang-Undang
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const newsCards = document.querySelectorAll(".news-card");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const selected = button.dataset.filter;
+
+                filterButtons.forEach(item => item.classList.remove("active"));
+                button.classList.add("active");
+
+                newsCards.forEach(card => {
+                    const showCard = selected === "semua" || card.dataset.category === selected;
+                    card.hidden = !showCard;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

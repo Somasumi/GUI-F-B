@@ -1,0 +1,224 @@
+/* =====================================================
+   feedback.css  -  Halaman Feedback
+   Memakai warna dari :root di style.css
+   (jadi ubah warna cukup di style.css)
+   ===================================================== */
+
+/* Header & nav bersifat fixed, jadi isi halaman diberi jarak dari atas */
+.feedback_page {
+  padding-top: 140px;
+}
+
+
+/* ---------- Judul halaman ---------- */
+.feedback_hero {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 20px 10px;
+  text-align: center;
+}
+
+.feedback_label {
+  margin: 0 0 8px;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.feedback_title {
+  margin: 0 0 16px;
+  color: var(--color-brand-dark);
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+.feedback_intro {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 17px;
+}
+
+
+/* ---------- Bagian form ---------- */
+.feedback_section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 80px;
+}
+
+.feedback_form,
+.thank_you_box {
+  width: 100%;
+  max-width: 620px;
+  background: var(--color-white);
+  border-radius: 18px;
+  border-top: 6px solid var(--color-highlight);
+  box-shadow: 0 8px 20px var(--shadow-card);
+  padding: 36px 40px;
+  box-sizing: border-box;
+}
+
+
+/* ---------- Isi form ---------- */
+.form_group {
+  margin-bottom: 22px;
+}
+
+.form_label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-brand-dark);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form_input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--color-text-body);
+  background: var(--color-light-gray);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.form_input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: var(--color-white);
+}
+
+.form_textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form_hint {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+
+/* ---------- Penilaian 1-5 ---------- */
+.rating_group {
+  display: flex;
+  gap: 10px;
+}
+
+/* radio asli disembunyikan, yang tampil adalah label-nya */
+.rating_radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rating_option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-light-gray);
+  color: var(--color-brand-dark);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.rating_option:hover {
+  background: var(--color-category-bg);
+  transform: translateY(-2px);
+}
+
+.rating_radio:checked + .rating_option {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.rating_radio:focus-visible + .rating_option {
+  outline: 3px solid var(--color-highlight);
+}
+
+
+/* ---------- Tombol kirim ---------- */
+.submit_button {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 14px 32px;
+  background: var(--color-button-dark);
+  color: var(--color-white);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.submit_button:hover {
+  background: var(--color-highlight);
+  color: var(--color-button-dark);
+  transform: translateY(-2px);
+}
+
+
+/* ---------- Kotak terima kasih ---------- */
+.thank_you_box {
+  text-align: center;
+}
+
+.thank_you_box[hidden] {
+  display: none;
+}
+
+.thank_you_title {
+  margin: 0 0 10px;
+  color: var(--color-brand-dark);
+  font-size: 30px;
+}
+
+.thank_you_text {
+  margin: 0 0 20px;
+  color: var(--color-text-body);
+}
+
+
+/* ---------- Footer ---------- */
+.feedback_footer {
+  background: var(--color-brand-dark);
+  color: var(--color-text-light);
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 14px;
+}
+
+.feedback_footer p {
+  margin: 0;
+}
+
+
+/* ---------- Layar kecil ---------- */
+@media (max-width: 600px) {
+  .feedback_title {
+    font-size: 32px;
+  }
+
+  .feedback_form,
+  .thank_you_box {
+    padding: 28px 20px;
+  }
+
+  .rating_option {
+    width: 42px;
+    height: 42px;
+  }
+}

@@ -1,0 +1,353 @@
+/* =====================================================
+   fasilitas.css  -  Halaman Fasilitas
+   Jejak Rasa Nusantara
+   ===================================================== */
+
+/* ---------- Warna & ukuran utama (ubah di sini saja) ---------- */
+:root {
+  --color-header: #3b2c2a;
+  --color-accent: #f39c46;
+  --color-nav-bg: #ececec;
+  --color-text: #222222;
+  --color-text-light: #666666;
+  --color-white: #ffffff;
+  --color-dark-button: #2b2b2b;
+  --color-placeholder: #d9cfc7;
+
+  --radius-card: 14px;
+  --content-width: 1100px;
+}
+
+/* ---------- Reset sederhana ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-header);
+  color: var(--color-white);
+  height: 80px;
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 0;
+}
+
+.site-header__logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.site-header__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 16px;
+}
+
+/* ---------- Kotak pencarian ---------- */
+.search-box {
+  display: flex;
+}
+
+.search-box__input {
+  width: 175px;
+  padding: 2px 4px;
+  border: 1px solid #999;
+}
+
+.search-box__button {
+  background: var(--color-white);
+  border: 1px solid #999;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+/* ---------- Tombol feedback ---------- */
+.feedback-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 55px;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  font-size: 16px;
+}
+
+.feedback-button:hover {
+  filter: brightness(1.08);
+}
+
+
+/* =====================================================
+   NAVIGASI
+   ===================================================== */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-nav-bg);
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.main-nav__link {
+  padding: 0 26px;
+  font-weight: bold;
+  font-size: 15px;
+  border-right: 1px solid #bbb;
+}
+
+.main-nav__link:last-child {
+  border-right: none;
+}
+
+.main-nav__link:hover,
+.main-nav__link--active {
+  color: var(--color-accent);
+}
+
+
+/* =====================================================
+   HERO
+   Ganti foto latar: ubah nama file pada url(...) di bawah
+   ===================================================== */
+.facility-hero {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  color: var(--color-white);
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("images/fasilitas/hero-fasilitas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-header); /* tampil jika foto belum ada */
+}
+
+.facility-hero__content {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.facility-hero__label {
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.facility-hero__title {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.facility-hero__text {
+  max-width: 600px;
+  font-size: 17px;
+}
+
+
+/* =====================================================
+   DAFTAR FASILITAS
+   ===================================================== */
+.facility-section {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  color: var(--color-text-light);
+  margin-bottom: 40px;
+}
+
+/* Grid: otomatis menyesuaikan jumlah kolom dengan lebar layar */
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 28px;
+  text-align: left;
+}
+
+/* ---------- Kartu fasilitas ---------- */
+.facility-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+/* Area foto: rasio tetap 4:3, foto otomatis dipotong rapi */
+.facility-card__photo {
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-placeholder); /* tampil jika foto belum ada */
+  overflow: hidden;
+}
+
+.facility-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.facility-card:hover .facility-card__photo img {
+  transform: scale(1.06);
+}
+
+.facility-card__body {
+  padding: 20px;
+}
+
+.facility-card__title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.facility-card__description {
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+
+/* =====================================================
+   AJAKAN (CALL TO ACTION)
+   ===================================================== */
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--color-nav-bg);
+}
+
+.cta-section__title {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.cta-section__text {
+  color: var(--color-text-light);
+  margin-bottom: 24px;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--color-dark-button);
+  color: var(--color-white);
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 40px;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--color-accent);
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+.site-footer {
+  background-color: var(--color-header);
+  color: var(--color-white);
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   RESPONSIVE (layar kecil / HP)
+   ===================================================== */
+@media (max-width: 700px) {
+  .site-header {
+    height: auto;
+    flex-direction: column;
+    padding: 12px 0 0;
+    gap: 10px;
+  }
+
+  .site-header__title {
+    font-size: 22px;
+  }
+
+  .site-header__actions {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 12px;
+  }
+
+  .feedback-button {
+    padding: 14px 28px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .main-nav__link {
+    padding: 0 14px;
+  }
+
+  .facility-hero__title {
+    font-size: 40px;
+  }
+}
