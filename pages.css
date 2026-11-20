@@ -1,0 +1,123 @@
+/* Jejak Rasa Nusantara - shared styles for tentang.html and menu.html */
+:root {
+  --brown: #392d2b;
+  --brown-soft: #51413d;
+  --orange: #f49e45;
+  --cream: #fff8ef;
+  --paper: #f7f3ee;
+  --ink: #282321;
+  --muted: #766d68;
+  --white: #ffffff;
+  --radius: 22px;
+  --shadow: 0 14px 35px rgba(57,45,43,.10);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+}
+a { color: inherit; }
+.page-wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+.eyebrow {
+  display: inline-block; margin: 0 0 12px; color: #a85d1e;
+  font-size: .78rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+}
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.12; }
+.section { padding: 76px 0; }
+.section-heading { max-width: 650px; margin-bottom: 32px; }
+.section-heading h2 { margin-bottom: 12px; color: var(--brown); font-size: clamp(2rem, 4vw, 3rem); }
+.section-heading p { color: var(--muted); margin-bottom: 0; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 13px 21px; border-radius: 999px; background: var(--orange);
+  color: var(--brown); text-decoration: none; font-weight: 800; border: 0; cursor: pointer;
+  transition: transform .2s, background .2s;
+}
+.btn:hover { transform: translateY(-2px); background: #ffb568; }
+.btn-outline { background: transparent; border: 1px solid rgba(255,255,255,.55); color: white; }
+.btn-outline:hover { color: var(--brown); border-color: var(--orange); }
+.hero-about {
+  min-height: 490px; display: grid; align-items: center; color: white;
+  background: linear-gradient(90deg, rgba(35,26,24,.94), rgba(35,26,24,.55)),
+    url("photo/Close-Up Rendang Beef Curry.png") center/cover;
+}
+.hero-inner { padding: 88px 0; max-width: 720px; }
+.hero-about h1 { font-size: clamp(2.8rem, 7vw, 5.3rem); margin-bottom: 20px; }
+.hero-about p { max-width: 590px; color: rgba(255,255,255,.83); font-size: 1.08rem; margin-bottom: 28px; }
+.hero-about .eyebrow { color: #ffc17f; }
+.story-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }
+.story-copy h2 { color: var(--brown); font-size: clamp(2rem, 4vw, 3rem); }
+.story-copy p { color: var(--muted); }
+.story-image { min-height: 390px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.story-image img { width: 100%; height: 100%; min-height: 390px; object-fit: cover; display: block; }
+.values { background: var(--cream); }
+.value-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.value-card {
+  background: white; border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow);
+  border: 1px solid rgba(57,45,43,.06);
+}
+.value-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 15px; background: #fff0df; font-size: 1.45rem; margin-bottom: 18px; }
+.value-card h3 { color: var(--brown); margin-bottom: 9px; }
+.value-card p { color: var(--muted); margin: 0; }
+.quote-band { padding: 58px 0; background: var(--brown); color: white; text-align: center; }
+.quote-band blockquote { max-width: 800px; margin: 0 auto; font-size: clamp(1.35rem, 3vw, 2rem); font-weight: 700; line-height: 1.4; }
+.quote-band p { margin: 16px 0 0; color: #ffc17f; }
+
+/* Menu page */
+.menu-hero {
+  padding: 76px 0 68px; color: white;
+  background: linear-gradient(120deg, #392d2b, #59413a);
+}
+.menu-hero h1 { font-size: clamp(2.8rem, 7vw, 4.8rem); margin-bottom: 14px; }
+.menu-hero p { max-width: 620px; color: rgba(255,255,255,.78); margin-bottom: 0; font-size: 1.05rem; }
+.menu-tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+.search-field {
+  flex: 1 1 240px; max-width: 360px; padding: 13px 17px; border: 1px solid #e4dcd4;
+  border-radius: 999px; background: white; font: inherit; outline: none;
+}
+.search-field:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(244,158,69,.18); }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-btn {
+  border: 1px solid #e4dcd4; border-radius: 999px; padding: 10px 16px;
+  background: white; color: var(--brown); font-weight: 700; cursor: pointer;
+}
+.filter-btn.active, .filter-btn:hover { background: var(--brown); color: white; border-color: var(--brown); }
+.menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.menu-card {
+  background: white; overflow: hidden; border-radius: 20px; box-shadow: var(--shadow);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.menu-card:hover { transform: translateY(-5px); box-shadow: 0 18px 38px rgba(57,45,43,.16); }
+.menu-photo { height: 210px; overflow: hidden; background: #e9dfd5; }
+.menu-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+.menu-card:hover .menu-photo img { transform: scale(1.06); }
+.menu-content { padding: 20px; }
+.menu-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 9px; }
+.menu-meta h3 { color: var(--brown); font-size: 1.2rem; margin: 0; }
+.price { color: #a85d1e; font-weight: 800; white-space: nowrap; }
+.menu-content p { color: var(--muted); font-size: .93rem; margin: 0; }
+.tag { display: inline-block; margin-top: 14px; padding: 5px 10px; border-radius: 999px; background: #fff0df; color: #99551d; font-size: .75rem; font-weight: 800; }
+.empty-state { display: none; text-align: center; color: var(--muted); padding: 38px 12px; grid-column: 1 / -1; }
+.menu-note { margin-top: 30px; color: var(--muted); font-size: .9rem; }
+@media (max-width: 800px) {
+  .story-grid { grid-template-columns: 1fr; gap: 28px; }
+  .story-image, .story-image img { min-height: 290px; }
+  .value-grid { grid-template-columns: 1fr; }
+  .menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .page-wrap { width: min(100% - 28px, 1120px); }
+  .section { padding: 54px 0; }
+  .hero-about { min-height: 430px; }
+  .hero-inner { padding: 68px 0; }
+  .menu-hero { padding: 58px 0; }
+  .menu-grid { grid-template-columns: 1fr; }
+  .menu-photo { height: 230px; }
+  .menu-tools { align-items: stretch; }
+  .search-field { max-width: none; }
+}

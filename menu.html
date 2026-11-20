@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Jejak Rasa Nusantara</title>
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="bg_nav">
+        <div class="navigation_1">
+            <div class="store">
+                <div class="store_logo">
+                    <img src="Minimal Brown Chef Emblem.png" alt="logo">
+                </div>
+                    <h1>Jejak Rasa Nusantara</h1>
+            </div>
+        <div class="container">
+            <div class="search">
+                <input type="text" placeholder="search">
+                <button>
+                    <img src="search.svg" alt="">
+                </button>
+            </div>
+                <div class="feedback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#ffffff"><path d="M12,15q0.43,0 0.71-0.29T13,14t-0.29-0.71T12,13t-0.71,0.29T11,14t0.29,0.71T12,15Zm-1-4h2V5H11v6ZM2,22V4Q2,3.17 2.59,2.59T4,2H20q0.83,0 1.41,0.59T22,4V16q0,0.82-0.59,1.41T20,18H6L2,22Zm3.15-6H20V4H4V17.13L5.15,16ZM4,16V4V16Z"/></svg>
+                    <p style="color: white;">Feedback</p>
+                </div>
+            </div>
+            </div>
+           <div class="navigation_2">
+  <div id="home" class="n active"><a href="index.html"><h4>Home</h4></a></div>
+  <div id="menu" class="n"><a href="menu.html"><h4>Menu</h4></a></div>
+  <div id="news" class="n"><a href="#news"><h4>Berita</h4></a></div>
+  <div id="about" class="n"><a href="tentang.html"><h4>Tentang</h4></a></div>
+  <div id="fasilitas" class="n"><a href="#fasilitas"><h4>Fasilitas</h4></a></div>
+</div>
+
+    </div>
+
+    </nav>
+  <main>
+   
+    <div class="blank"></div>
+<div class="blank"></div><div class="blank"></div><div class="blank"></div><div class="blank"></div><div class="blank"></div>
+    <section class="section">
+      <div class="page-wrap">
+        <div class="section-heading">
+          <span class="eyebrow">Pilihan kuliner</span>
+          <h2>Temukan favoritmu</h2>
+          <p>Berikut beberapa contoh hidangan untuk katalog Jejak Rasa Nusantara.</p>
+        </div>
+
+        <div class="menu-tools">
+          <input class="search-field" id="menuSearch" type="search" placeholder="Cari makanan atau minuman..." aria-label="Cari menu">
+          <div class="filters" aria-label="Filter kategori">
+            <button class="filter-btn active" type="button" data-filter="all">Semua</button>
+            <button class="filter-btn" type="button" data-filter="makanan">Makanan</button>
+            <button class="filter-btn" type="button" data-filter="minuman">Minuman</button>
+            <button class="filter-btn" type="button" data-filter="camilan">Camilan</button>
+          </div>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-card" data-category="makanan" data-name="rendang">
+            <div class="menu-photo"><img src="photo/Glossy Beef Rendang with Kaffir Lime Leaves.png" alt="Rendang daging"></div>
+            <div class="menu-content"><div class="menu-meta"><h3>Rendang</h3><span class="price">Rp 30.000</span></div><p>Daging sapi yang dimasak perlahan dengan santan dan rempah hingga kaya rasa.</p><span class="tag">Makanan</span></div>
+          </article>
+          <article class="menu-card" data-category="makanan" data-name="nasi campur">
+            <div class="menu-photo"><img src="photo/Vibrant Indonesian Nasi Campur Feast (1)_2.png" alt="Nasi campur"></div>
+            <div class="menu-content"><div class="menu-meta"><h3>Nasi Campur</h3><span class="price">Rp 20.000</span></div><p>Nasi dengan aneka lauk dan pelengkap dalam satu sajian yang beragam.</p><span class="tag">Makanan</span></div>
+          </article>
+          <article class="menu-card" data-category="makanan" data-name="gudeg">
+            <div class="menu-photo"><img src="photo/Southeast Asian Noodles with Tofu and Herbs.png" alt="Mie goreng"></div>
+            <div class="menu-content"><div class="menu-meta"><h3>Gudeg</h3><span class="price">Rp 20.000</span></div><p>Mie berbumbu gurih dengan sayuran, tahu, dan taburan rempah.</p><span class="tag">Makanan</span></div>
+          </article>
+          <article class="menu-card" data-category="makanan" data-name="udang telur">
+            <div class="menu-photo"><img src="photo/Spicy Shrimp Egg Stir-Fry Plate.png" alt="nasi goreng"></div>
+            <div class="menu-content"><div class="menu-meta"><h3>Nasi Goreng</h3><span class="price">Rp 10.000</span></div><p>Olahan udang dan telur dengan bumbu gurih serta sentuhan pedas.</p><span class="tag">Makanan</span></div>
+          </article>
+          <article class="menu-card" data-category="camilan" data-name="pempek">
+            <div class="menu-photo"><img src="photo/Indonesian Fish Cakes and Fritters.png" alt="Pempek"></div>
+            <div class="menu-content"><div class="menu-meta"><h3>Pempek</h3><span class="price">Rp 18.000</span></div><p>Olahan ikan khas Palembang yang nikmat disajikan dengan kuah cuko.</p><span class="tag">Camilan</span></div>
+          </article>
+          <article class="menu-card" data-category="minuman" data-name="es teh">
+            <div class="menu-photo"><img src="photo/es-teh.jpg" alt="Es teh manis" onerror="this.style.display='none'"></div>
+            <div class="menu-content"><div class="menu-meta"><h3>Es Teh Manis</h3><span class="price">Rp 6.000</span></div><p>Teh seduh dengan rasa manis yang menyegarkan, cocok menemani hidangan.</p><span class="tag">Minuman</span></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState">Menu tidak ditemukan. Coba kata kunci atau kategori lain.</p>
+        <p class="menu-note">Catatan: nama menu, deskripsi, harga, dan foto di halaman ini adalah contoh. Silakan sesuaikan dengan isi katalog dan harga yang kamu gunakan.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+     <div class="store_footer">
+            <div class="store_logo">
+                <img src="Minimal Brown Chef Emblem.png" alt="logo">
+            </div>
+            <h1>Jejak Rasa Nusantara</h1>
+            </div>
+        <div class="footer">
+            <div class="tentang">
+                <p>
+                    tentang restoranm
+                </p>
+                <P>
+                    restoran ini adalah restoran yang menyediakan berbagai macam makanan dan minuman dengan kualitas terbaik. Kami berkomitmen untuk memberikan pengalaman kuliner yang tak terlupakan bagi setiap pelanggan kami.
+                </P>
+        </div>
+        <div class="social_media">
+            <div class="app">
+                <img src="logo svg/instagram-svgrepo-com.svg" alt="logo_instagram">
+                <p>
+                    instagram
+                </p>
+            </div>
+            <div class="app">
+                <img src="logo svg/facebook-svgrepo-com.svg" alt="logo_facebook">
+                <p>
+                    facebook
+                </p>
+            </div>
+            <div class="app">
+                <img src="logo svg/icons8-x.svg" alt="logo_X">
+                <p>
+                    X
+                </p>
+            </div>
+            </div>    
+        </div>
+        <div class="copyright">
+            <div class="a" id="footer_links">
+                <a href="" class="a1">kebijakan privasi</a>
+                <a href="" class="a2">peta situs</a>
+            </div>
+            <p class="a" id="footer_copyright">
+            ©2026 Group 6. Semua Hak Dilindungi Undang-Undang
+            </p>
+        </div>
+    </footer>
+
+
+  <script>
+    const searchInput = document.getElementById('menuSearch');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const menuCards = document.querySelectorAll('.menu-card');
+    const emptyState = document.getElementById('emptyState');
+    let activeFilter = 'all';
+
+    function filterMenu() {
+      const query = searchInput.value.trim().toLowerCase();
+      let visibleCount = 0;
+
+      menuCards.forEach(card => {
+        const matchesCategory = activeFilter === 'all' || card.dataset.category === activeFilter;
+        const matchesSearch = card.dataset.name.includes(query) || card.textContent.toLowerCase().includes(query);
+        const visible = matchesCategory && matchesSearch;
+        card.style.display = visible ? '' : 'none';
+        if (visible) visibleCount++;
+      });
+
+      emptyState.style.display = visibleCount ? 'none' : 'block';
+    }
+
+    searchInput.addEventListener('input', filterMenu);
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter;
+        filterButtons.forEach(item => item.classList.toggle('active', item === button));
+        filterMenu();
+      });
+    });
+  </script>
+</body>
+</html>
