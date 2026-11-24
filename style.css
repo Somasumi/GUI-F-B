@@ -48,6 +48,21 @@ body{
     padding: 0;
     margin:0;
 }
+.bg_wb img{
+    position: fixed;
+    z-index: 0;
+}
+.welcom-bg{
+    position: absolute;
+    background-color: var(--color-category-bg);
+    height: 420px;
+    box-shadow: #000000 0 2px 100px;
+    width: 100%;
+}
+.main {
+    position: relative;
+    z-index: 2;
+}
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -363,22 +378,24 @@ nav{
     font-size:70px;
     color: var(--color-text-light);
     position: absolute;
-    bottom:70px;
+    bottom:90px;
     z-index: 4;
 }
 
 .subt h3{
+    width: 800px;
     font-size: 30px;
     color: var(--color-text-light);
     position: absolute;
-    bottom:50px;
+    bottom:70px;
     z-index: 4;
 }
 .des p{
-    font-size: 20px;
+    width: 600px;
+    font-size: 15px;
     color: var(--color-text-light);
     position: absolute;
-    bottom:40px;
+    bottom:20px;
     z-index: 4;
 }
 .g1{
@@ -484,7 +501,7 @@ nav{
     content: "";
     position: absolute;
     inset: 0;
-    background-color: var(--overlay-light);
+    
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     pointer-events: none;
@@ -503,7 +520,10 @@ nav{
     position: absolute;
     bottom:150px;
     display: block;
-    transition: 1s ease-in-out;
+    transition: 4s ease-in-out;
+}
+.i-hover .des p{
+    bottom: -70px;
 }
 .hero_slide img {
     transition: transform 0.3s ease-in-out;
@@ -514,7 +534,7 @@ nav{
 }
 .hero_slide::after{
     content: "";
-    background-color: var(--overlay-light);
+
     opacity:0;
 }
 .hero_slide::after:hover{
