@@ -6,6 +6,7 @@
   <title>Menu | Jejak Rasa Nusantara</title>
   <link rel="stylesheet" href="pages.css">
   <link rel="stylesheet" href="style.css">
+  <script src="pop-up.js" defer></script>
 </head>
 <body>
   <div class="bg_wb"><img src="photo/Artboard 1dhdh.png" alt=""></div>
@@ -145,7 +146,47 @@
             </p>
         </div>
     </footer>
+<div class="food-modal" id="foodModal">
 
+    <div class="modal-content">
+
+        <button class="modal-close" id="closeModal">
+            &times;
+        </button>
+
+        <div class="modal-image">
+            <img id="modalImage" src="" alt="">
+        </div>
+
+        <div class="modal-details">
+
+            <span class="modal-label">
+                JEJAK RASA NUSANTARA
+            </span>
+
+            <h1 id="modalName">Rendang</h1>
+
+            <h3 id="modalPrice">Rp 30.000</h3>
+
+            <div class="modal-description">
+                <h2>Tentang Hidangan</h2>
+                <p id="modalDescription"></p>
+            </div>
+
+            <div class="modal-origin">
+                <h2>Asal Usul</h2>
+                <p id="modalOrigin"></p>
+            </div>
+
+            <a href="#" id="buyButton" class="buy-button">
+                Beli Sekarang →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
 
   <script>
     const searchInput = document.getElementById('menuSearch');

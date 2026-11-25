@@ -6,6 +6,7 @@
     <title>Jejak Rasa</title>
    
     <link rel="stylesheet" href="style.css">
+    <script src="pop-up.js" defer></script>
 </head>
 <body>
     <nav>
@@ -213,7 +214,11 @@
 
     <div class="list_food">
 
-        <div class="card">
+        <div class="card"
+        data-name="Rendang"
+        data-price="Rp 30.000"
+        data-description="Daging sapi dengan bumbu rempah khas Minangkabau."
+        data-origin="Berasal dari Sumatera Barat, rendang merupakan hidangan tradisional masyarakat Minangkabau.">
             <img src="photo/Close-Up Rendang Beef Curry.png" alt="Rendang">
             <div class="card_info">
         <div class="card_title">
@@ -227,7 +232,11 @@
     </div>
         </div>
 
-        <div class="card">
+        <div class="card"
+        data-name="Gudeg"
+     data-price="Rp 20.000"
+     data-description="Daging sapi dengan bumbu rempah khas Minangkabau."
+     data-origin="Berasal dari Sumatera Barat, rendang merupakan hidangan tradisional masyarakat Minangkabau.">
             <img src="photo/64704743a406f.jpg" alt="Gudeg">
            <div class="card_info">
         <div class="card_title">
@@ -241,7 +250,11 @@
     </div>
         </div>
 
-        <div class="card">
+        <div class="card"
+        data-name="Nasi Goreng"
+     data-price="Rp 10.000"
+     data-description="Daging sapi dengan bumbu rempah khas Minangkabau."
+     data-origin="Berasal dari Sumatera Barat, rendang merupakan hidangan tradisional masyarakat Minangkabau.">
             <img src="photo/Spicy Shrimp Egg Stir-Fry Plate.png" alt="Nasi Goreng">
             <div class="card_info">
         <div class="card_title">
@@ -261,7 +274,11 @@
 
     <div class="list_drink">
 
-        <div class="card">
+        <div class="card"
+        data-name="Es Campur"
+     data-price="Rp 20.000"
+     data-description="Daging sapi dengan bumbu rempah khas Minangkabau."
+     data-origin="Berasal dari Sumatera Barat, rendang merupakan hidangan tradisional masyarakat Minangkabau.">
             <img src="photo/Vibrant Pink Dragon Fruit Dessert.png" alt="Es Campur">
             <div class="card_info">
         <div class="card_title">
@@ -275,7 +292,11 @@
     </div>
         </div>
 
-        <div class="card">
+        <div class="card"
+        data-name="Kopi Hitam"
+     data-price="Rp 7.000"
+     data-description="Daging sapi dengan bumbu rempah khas Minangkabau."
+     data-origin="Berasal dari Sumatera Barat, rendang merupakan hidangan tradisional masyarakat Minangkabau.">
             <img src="photo/Cozy Glass Coffee on Wood Coaster.png" alt="Kopi Hitam">
             <div class="card_info">
         <div class="card_title">
@@ -289,7 +310,11 @@
     </div>
         </div>
 
-        <div class="card">
+        <div class="card"
+        data-name="Teh Es"
+     data-price="Rp 5.000"
+     data-description="Daging sapi dengan bumbu rempah khas Minangkabau."
+     data-origin="Berasal dari Sumatera Barat, rendang merupakan hidangan tradisional masyarakat Minangkabau.">
             <img src="photo/Iced Tea Still Life with Tea Leaves and Sugar.png" alt="Es Teh">
             <div class="card_info">
         <div class="card_title">
@@ -461,6 +486,46 @@
         </div>
     </footer>
 
+<div class="food-modal" id="foodModal">
 
+    <div class="modal-content">
+
+        <button class="modal-close" id="closeModal">
+            &times;
+        </button>
+
+        <div class="modal-image">
+            <img id="modalImage" src="" alt="">
+        </div>
+
+        <div class="modal-details">
+
+            <span class="modal-label">
+                JEJAK RASA NUSANTARA
+            </span>
+
+            <h1 id="modalName">Rendang</h1>
+
+            <h3 id="modalPrice">Rp 30.000</h3>
+
+            <div class="modal-description">
+                <h2>Tentang Hidangan</h2>
+                <p id="modalDescription"></p>
+            </div>
+
+            <div class="modal-origin">
+                <h2>Asal Usul</h2>
+                <p id="modalOrigin"></p>
+            </div>
+
+            <a href="#" id="buyButton" class="buy-button">
+                Beli Sekarang →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
 </body>
 </html>
