@@ -21,7 +21,7 @@ body {
   line-height: 1.6;
 }
 a { color: inherit; }
-.page-wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+.page-wrap { position:relative;width: min(1120px, calc(100% - 40px)); margin: 0 auto; overflow:hidden;}
 .eyebrow {
   display: inline-block; margin: 0 0 12px; color: #a85d1e;
   font-size: .78rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
@@ -72,6 +72,7 @@ h1, h2, h3 { line-height: 1.12; }
 .menu-hero {
   padding: 76px 0 68px; color: white;
   background: linear-gradient(120deg, #392d2b, #59413a);
+  
 }
 .menu-hero h1 { font-size: clamp(2.8rem, 7vw, 4.8rem); margin-bottom: 14px; }
 .menu-hero p { max-width: 620px; color: rgba(255,255,255,.78); margin-bottom: 0; font-size: 1.05rem; }
@@ -84,13 +85,14 @@ h1, h2, h3 { line-height: 1.12; }
 .filters { display: flex; flex-wrap: wrap; gap: 8px; }
 .filter-btn {
   border: 1px solid #e4dcd4; border-radius: 999px; padding: 10px 16px;
-  background: white; color: var(--brown); font-weight: 700; cursor: pointer;
+  background: #ffffff; color: var(--brown); font-weight: 700; cursor: pointer;
 }
 .filter-btn.active, .filter-btn:hover { background: var(--brown); color: white; border-color: var(--brown); }
 .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .menu-card {
   background: white; overflow: hidden; border-radius: 20px; box-shadow: var(--shadow);
   transition: transform .22s ease, box-shadow .22s ease;
+  box-shadow: #000000 0 1px 20px;
 }
 .menu-card:hover { transform: translateY(-5px); box-shadow: 0 18px 38px rgba(57,45,43,.16); }
 .menu-photo { height: 210px; overflow: hidden; background: #e9dfd5; }
