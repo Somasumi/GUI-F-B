@@ -38,7 +38,7 @@ cards.forEach(card => {
         modalOrigin.textContent = origin;
 
         buyButton.href =
-            "https://wa.me/6281234567890?text=" +
+            "https://wa.me/6282253500859?text=" +
             encodeURIComponent("Saya ingin memesan " + name);
 
         foodModal.classList.add("active");
